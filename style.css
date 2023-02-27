@@ -1,0 +1,676 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.bgDarkBlue{
+    background-color: #27180F;
+}
+.bgLightBlue{
+    background-color: #C18C5B;
+}
+
+/* ---------------------------------HEADER----------------------------------- */
+
+
+.header{
+    height: 100vh;
+    position: relative;
+}
+.head{
+    width: 100%;
+    height: 10vh;
+}
+.info{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.adress{
+    color: #27180F;
+    font-size: 18px;
+}
+.numbers{
+    font-size: 20px;
+    display: flex;
+}
+.numbers div{
+    margin-left: 60px;
+    color: #27180F;
+}
+.nav{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding: 0 50px;
+}
+.links{
+    display: flex;
+    transition: .7s;
+}
+.links a{
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: .7s;
+}
+.links a:hover{
+    text-transform: uppercase;
+    color: #C18C5B;
+    transition: .7s;
+}
+.icons{
+    display: flex;
+    padding-right: 50px;
+}
+.icons a{
+    margin-left: 30px;
+}
+.icons a i{
+    transition: .7s;
+}
+.icons a i:hover{
+    color: #C18C5B;
+    transition: .7s;
+}
+.slider_main{
+    height: 90vh;
+    position: relative;
+}
+.bgHeader{
+    height: 100%;
+    width: 100%;
+    background-image: url(img/bgHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.carusel{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carts{
+    height: 80%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.cart1{
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/sushi-ris-rolly-ogon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.arrow:hover{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    transition: .3s;
+}
+.arrow{
+    transition: .3s;
+}
+.cart1 svg{
+    position: absolute;
+    right: -175px;
+    top: 50px;
+}
+.cart2 svg{
+    position: absolute;
+    left: -175px;
+    bottom: 50px;
+}
+.nameset{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.namesettitle{
+    font-size: 36px;
+}
+.namesetmoney{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.button{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    color: #C18C5B;
+    border: solid #C18C5B;
+    letter-spacing: 3px;
+    padding: 5px 20px;
+    transition: .3s;
+    background: none;
+}
+.button:hover{
+    background-color: #C18C5B;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.buttonCart:hover{
+    background-color: #5EB756;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.bgDark{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cart2{
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/sushi-ris-rolly-ogon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ----------------------------NEWPOPULAR------------------------------ */
+
+
+.newPopular{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+.new{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newP{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.popularP{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.newBody{
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+.newBody svg{
+    height: 70px;
+    width: 70px;
+}
+.popular{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+}
+.newProducts{
+    display: flex;
+    margin: 0 40px;
+    min-width: 0;
+}
+.newProduct{
+    background-color: #5EB756;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 15px;
+    transition: 1s;
+    z-index: 1;
+}
+.bestProduct{
+    background-color: #D12B2B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 15px;
+    z-index: 1;
+}
+.cart i:hover{
+    background-color: #fff;
+    color: #5EB756;
+    cursor: pointer;
+    font-size: 48px;
+}
+.cartHover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+.cartProduct:hover>.cartHover{
+    z-index: 1;
+    transition: 1s;
+}
+.bgCartHover{
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 1s;
+    position: relative;
+}
+.buttonCart{
+    color: #5EB756;
+    border: solid #5EB756;
+    letter-spacing: 3px;
+    transition: .3s;
+    background: none;
+    padding: 10px 30px;
+}
+.bgCartHoverTitle{
+    text-align: center;
+    font-size: 28px;
+}
+.bgCartHoverMoney{
+    font-size: 38px;
+}
+.newProduct:hover{
+    cursor: pointer;
+}
+.bestProduct:hover{
+    cursor: pointer;
+}
+.bgProduct{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+.cartProduct{
+    height: 315px;
+    width: 315px;
+    margin: 0 25px;
+    position: relative;
+    transition: 1s;
+}
+.cart{
+    background-color: #C18C5B;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.cart i{
+    font-size: 40px;
+    padding: 15px;
+    transition: .5s;
+}
+.bgDark{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
+
+/* ---------------------------------MENU----------------------------------- */
+
+
+.bgMenu{
+    height: 550px;
+    background-image: url(img/bgMenu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+.menu{
+    position: relative;
+    min-width: 0;
+}
+.menuBody{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    min-width: 0;
+}
+.menuBody p{
+    font-size: 40px;
+    position: absolute;
+    top: 10%;
+}
+.menuBody div{
+    display: flex;
+    align-items: center;
+    margin-left: 13%;
+}
+.menuBody div svg{
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+.menuProduct{
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 15px;
+    transition: .5s;
+}
+.cartProduct:hover{
+    cursor: pointer;
+}
+.cartProduct:hover>.bgDarkCart{
+    background-color: rgba(0, 0, 0, .8);
+    transition: .5s;
+}
+.cartProduct:hover>.menuProduct{
+    font-size: 60px;
+    top: 20%;
+    left: 10%;
+    transition: .5s;
+}
+.bgDarkCart{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s;
+}
+.bgMenuProd{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgMenuProd1{
+    background-image: url(img/menu1.jpg);
+}
+.bgMenuProd2{
+    background-image: url(img/menu2.jpg);
+}
+.bgMenuProd3{
+    background-image: url(img/menu3.jpg);
+}
+.bgMenuProd4{
+    background-image: url(img/menu4.jpg);
+}
+.bgMenuProd5{
+    background-image: url(img/menu5.jfif);
+}
+
+
+/* ---------------------------------WHYWE----------------------------------- */
+
+
+.whyWe div{
+    height: 380px;
+}
+.whyWeBody{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.whyWeBody div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.whyWeBody div i{
+    font-size: 128px;
+    margin-bottom: 24px;
+}
+.whyWeBody div p{
+    font-size: 40px;
+}
+
+
+/* ---------------------------------ABOUTUS----------------------------------- */
+
+
+.aboutUs{
+    position: relative;
+}
+.bgAboutUs{
+    height: 500px;
+    background-image: url(img/bgAboutUs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bgAboutUs p{
+    margin-left: 10%;
+}
+.bautitle{
+    font-size: 40px;
+}
+.bautext{
+    padding-top: 50px;
+    width: 45%;
+}
+
+/* ---------------------------------FOOTER----------------------------------- */
+
+
+.footer div{
+    height: 160px;
+}
+.footerPar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ---------------------------------SLIDERS----------------------------------- */
+
+
+.slider__item{
+    text-align: center;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 0;
+    position: relative;
+    height: 550px;
+    width: 80%;
+}
+.slider_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 0;
+    position: relative;
+    height: 550px;
+    width: 80%;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+}
+.slider_menu .slick-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+}
+.slider .slick-arrow.slick-prev{
+    left: -100px;
+    top: 40%;
+    background-image: url(img/icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.slider .slick-arrow.slick-next{
+    right: -100px;
+    top: 40%;
+    background-image: url(img/icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.slider_menu .slick-arrow.slick-prev{
+    right: 0;
+    background-image: url(img/icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.slider_menu .slick-arrow.slick-next{
+    right: -100px;
+    background-image: url(img/icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+
+/* ---------------------------------SLIDERS----------------------------------- */
+
+
+.catalogBg{
+    background-color: #030405;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.catalogName span{
+    font-size: 36px;
+}
+.catalogButtons button{
+    color: #C18C5B;
+    background: none;
+    border: solid 3px #C18C5B;
+    padding: 5px 30px;
+    transition: .3s;
+}
+.catalogButtons button:hover{
+    color: #fff;
+    background: #C18C5B;
+    cursor: pointer;
+}
+.sort{
+    margin-right: 30px;
+}
+.catalogTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.cartButton{
+    color: #C18C5B;
+    background: none;
+    border: solid 3px #C18C5B;
+    padding: 5px 30px;
+    transition: .3s;
+    width: 320px;
+    margin-top: 20px;
+}
+.cartButton:hover{
+    color: #fff;
+    background: #C18C5B;
+    cursor: pointer;
+}
+.catalogImg{
+    width: 320px;
+    height: 300px;
+}
+.catalogmoney{
+    font-size: 36px;
+    padding-top: 20px;
+}
+.catalogPar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+.catalogPar p{
+    text-align: center;
+    margin: 5px 0;
+    width: 300px;
+}
